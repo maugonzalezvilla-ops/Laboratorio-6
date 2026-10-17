@@ -3,74 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratorio 6 - Mauricio Gonzalez Villanueva</title>
+    <title>Inicio | Radar de Mauricio</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #eeeeee;
-            color: #333333;
-            margin: 0;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #29465b;
-            padding: 20px;
-        }
-
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-            font-size: 18px;
-        }
-
-        main {
-            background-color: white;
-            max-width: 800px;
-            margin: 30px auto;
-            padding: 25px;
-        }
-
-        h1 {
-            color: #29465b;
-        }
-
-        p {
-            font-size: 24px;
-            line-height: 1.5;
-        }
-
-        img {
-            width: 250px;
-            max-width: 100%;
-            height: auto;
-            border: 3px solid #29465b;
-        }
-    </style>
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
 </head>
 
-<body>
-    <nav>
-        <a href="#">pagina 1</a>
-        <a href="#">pagina 2</a>
-        <a href="#">pagina 3</a>
+<body style="--acento: #29465b">
+    <nav aria-label="Navegación principal">
+        <a href="index.html" class="active" aria-current="page">Inicio</a>
+        <a href="pagina1.html">Tigres UANL</a>
+        <a href="pagina2.html">IT</a>
+        <a href="pagina3.html">Minecraft</a>
     </nav>
 
     <main>
-        <h1>Laboratorio 6</h1>
+        <div class="inicio">
+            <div class="etiqueta">
+                TIGRES + TECNOLOGÍA + HISTORIA GAMER
+            </div>
 
-        <p>
-            Yo soy Mauricio Gonzalez Villanueva, de matricula 2093613
-            y a continuación presento una página creada con HTML y CSS
-            básicos. Esta actividad consiste en agregar un menú con tres
-            opciones, una imagen y un texto grande, aplicando un diseño
-            sencillo.
-        </p>
+            <h1>Radar de Mauricio</h1>
 
-        <img src="Yo.jpeg"
-             alt="Fotografía de Mauricio Gonzalez Villanueva">
+            <p class="presentacion">
+                Yo soy Mauricio Gonzalez Villanueva, de matricula 2093613
+                y a continuación presento el laboratorio 6 de la materia de Programación Web.  
+                En este laboratorio se presentan tres páginas web que reflejan mis intereses personales: mi equipo de fútbol favorito, 
+                las tecnologías de la información y la historia del popular juego Minecraft. Cada página ofrece una visión única sobre estos temas, 
+                combinando información relevante con un diseño atractivo y funcional.
+            </p>
+
+            <img
+                class="foto"
+                src="imagenes/Yo.jpeg"
+                alt="Fotografía de Mauricio Gonzalez Villanueva"
+            >
+        </div>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <span class="badge text-bg-dark">01</span>
+
+                        <h2 class="mt-3">Tigres UANL</h2>
+                        <p>Mi equipo. Mis colores. Mi pasión.</p>
+
+                        <a class="btn btn-outline-dark" href="pagina1.html">
+                            Explorar pagina 1
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <span class="badge text-bg-dark">02</span>
+
+                        <h2 class="mt-3">El mundo de las IT</h2>
+                        <p>La tecnología detrás de lo cotidiano.</p>
+
+                        <a class="btn btn-outline-dark" href="pagina2.html">
+                            Explorar pagina 2
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <span class="badge text-bg-dark">03</span>
+
+                        <h2 class="mt-3">Historia de Minecraft</h2>
+                        <p>De una idea pequeña a mundos infinitos.</p>
+
+                        <a class="btn btn-outline-dark" href="pagina3.html">
+                            Explorar pagina 3
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <footer>
+        Mauricio Gonzalez Villanueva · Matrícula 2093613 · Laboratorio 6 · Programación Web
+    </footer>
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
 </body>
 </html>

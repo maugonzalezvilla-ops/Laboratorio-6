@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El mundo de las IT | Radar de Mauricio</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body style="--acento: #347dc1">
+    <nav aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="pagina1.html">Tigres UANL</a>
+        <a href="pagina2.html" class="active" aria-current="page">IT</a>
+        <a href="pagina3.html">Minecraft</a>
+    </nav>
+
+    <main>
+        <header class="portada">
+            <div class="etiqueta">
+                RADAR DE MAURICIO / 02 / TECNOLOGÍAS DE LA INFORMACIÓN
+            </div>
+
+            <h1>El mundo de las IT</h1>
+            <h2>La tecnología detrás de lo cotidiano.</h2>
+
+            <p>
+                Computadoras, redes y datos: una mirada sencilla a lo que
+                mantiene conectado nuestro mundo.
+            </p>
+
+        </header>
+
+        <section class="row g-4" aria-label="Tres ideas sobre las IT">
+
+            <div class="col-md-4">
+                <article class="card">
+                    <img
+                        class="card-img-top"
+                        src="imagenes/it-concepto.png"
+                        alt="Interfaz digital con las siglas IT y símbolos tecnológicos"
+                        style="object-fit: contain; background: #f2f2f2;"
+                    >
+
+                    <div class="card-body">
+                        <span class="numero">01</span>
+                        <h2 class="mt-2">¿Qué significa IT?</h2>
+
+                        <p class="card-text">
+                            IT viene de Information Technology, que en español
+                            significa tecnologías de la información o TI.
+                            Este campo reúne herramientas para almacenar,
+                            procesar y compartir información. Incluye equipos
+                            físicos, programas y redes. Cuando una escuela
+                            administra calificaciones o una empresa organiza
+                            sus archivos digitales, está utilizando tecnologías
+                            de la información.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="card">
+                    <img
+                        class="card-img-top"
+                        src="imagenes/it-servidores.png"
+                        alt="Centro de datos con filas de servidores"
+                        style="object-fit: contain; background: #f2f2f2;"
+                    >
+
+                    <div class="card-body">
+                        <span class="numero">02</span>
+                        <h2 class="mt-2">Todo está conectado</h2>
+
+                        <p class="card-text">
+                            Una red permite que diferentes dispositivos
+                            intercambien información. Por ejemplo, una computadora
+                            puede enviar un archivo a un servidor para que otras
+                            personas autorizadas lo consulten. Internet conecta
+                            redes a gran escala, mientras que una red local
+                            puede funcionar dentro de una casa, una escuela
+                            o una oficina.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="col-md-4">
+                <article class="card">
+                    <img
+                        class="card-img-top"
+                        src="imagenes/it-seguridad.png"
+                        alt="Escudo digital con un candado que representa la protección de datos"
+                        style="object-fit: contain; background: #f2f2f2;"
+                    >
+
+                    <div class="card-body">
+                        <span class="numero">03</span>
+                        <h2 class="mt-2">Crear soluciones, cuidar datos</h2>
+
+                        <p class="card-text">
+                            Las IT también incluyen el desarrollo de software,
+                            el soporte técnico y la protección de la información.
+                            Una aplicación útil debe resolver una necesidad
+                            y manejar los datos con cuidado. En esta actividad
+                            practico una pequeña parte de ese mundo: organizar
+                            contenido con HTML y darle presentación mediante
+                            CSS y Bootstrap.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <div class="alert alert-light" role="note">
+            <strong>Para llevarte una idea:</strong>
+            Ejemplo cercano: al entrar a una plataforma escolar participan
+            tu dispositivo, una red, un servidor y un programa.
+        </div>
+
+        <div class="accordion" id="retos">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#reto"
+                        aria-expanded="false"
+                        aria-controls="reto"
+                    >
+                        Sigue el recorrido: ¿qué pasa al abrir una página web?
+                    </button>
+                </h2>
+
+                <div
+                    id="reto"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#retos"
+                >
+                    <div class="accordion-body">
+                        En un caso típico, el navegador localiza el servidor
+                        mediante DNS y solicita los archivos de la página.
+                        Después interpreta el HTML, aplica el CSS y ejecuta
+                        el JavaScript necesario. En este proyecto los archivos
+                        están en tu computadora, por eso puedes abrirlo sin conexión.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        Mauricio Gonzalez Villanueva · Matrícula 2093613 · Laboratorio 6 · Programación Web 
+    </footer>
+
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>
